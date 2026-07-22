@@ -1307,6 +1307,13 @@
 .hero-cta a.secondary:hover{background:var(--ink);color:#fff}
 .hero-cta .arrow{transition:transform .2s ease}
 .hero-cta a:hover .arrow{transform:translateX(3px)}
+
+/* Dealer clip (July .dealer-clip pattern: vertical 9:16 phone video) */
+.dealer-clip{margin:8px auto 28px;max-width:260px}
+.dealer-clip .frame{overflow:hidden;border-radius:14px;border:1px solid var(--rule);background:#0e1216;aspect-ratio:9/16;box-shadow:0 2px 4px rgba(20,18,16,.06),0 14px 30px rgba(20,18,16,.10)}
+.dealer-clip video{display:block;width:100%;height:100%;object-fit:cover}
+.dealer-clip figcaption{margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:center}
+@media (max-width:640px){.dealer-clip{max-width:100%}}
 </style>
 </head>
 <body>
@@ -1335,16 +1342,13 @@
   </div>
 
   <figure class="hero-photo full-bleed" role="img" aria-label="Toyota Crown lease deal at Dalton Toyota National City">
-    <video class="scene" width="1920" height="600" autoplay muted loop playsinline preload="auto" poster="97.webp" aria-label="A Toyota Crown available to lease or finance this August at Dalton Toyota National City, the premium hybrid sedan" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-        <source src="hero.mp4" type="video/mp4">
-        <img class="scene"
+    <img class="scene"
          src="97.webp"
          alt="A Toyota Crown available to lease or finance this August at Dalton Toyota National City, the premium hybrid sedan"
          loading="eager"
          fetchpriority="high"
          width="1920"
          height="600" />
-      </video>
     <span class="credit">DALTON TOYOTA NATIONAL CITY · CROWN</span>
     <figcaption class="visually-hidden">A Toyota Crown at Dalton Toyota National City, the premium hybrid sedan available to lease or finance on the Mile of Cars.</figcaption>
   </figure>
@@ -1377,6 +1381,15 @@
       <section class="s" id="how-lease-works">
         <div class="section-num"><span>01</span><span>From the sales desk</span></div>
         <h2 class="section-h">How a Crown lease <em>actually works</em> this August.</h2>
+        <figure class="dealer-clip">
+          <div class="frame">
+            <video controls playsinline preload="metadata" poster="clip-poster.jpg" aria-label="Walk-around of the Toyota Crown at Dalton Toyota National City">
+              <source src="dealer-clip.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption>A quick walk-around of the Toyota Crown, filmed at Dalton Toyota National City.</figcaption>
+        </figure>
+
         <p class="lede">A lease lets you drive a new Toyota Crown for a fixed term - usually 24 or 36 months - for a lower monthly payment than financing the whole purchase, because you're only paying for the depreciation you use plus rent charge, not the full sticker.</p>
         <p>You agree to an annual mileage cap, keep the car in clean shape, and at the end you return it, buy it out at the residual, or roll into a new Crown. <em>Reviewed and posted by Clarence McClain, General Sales Manager, Dalton Toyota National City.</em></p>
 

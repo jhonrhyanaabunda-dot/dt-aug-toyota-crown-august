@@ -1297,6 +1297,16 @@
     }
     .btn:hover .arrow { transform: none; }
   }
+
+/* Hero CTA buttons (July template) */
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:0 0 32px}
+.hero-cta a{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:600;font-size:16px;text-decoration:none;border-radius:999px;padding:14px 26px;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.hero-cta a.primary{background:var(--red);color:#fff;border:1px solid var(--red)}
+.hero-cta a.primary:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.hero-cta a.secondary{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.hero-cta a.secondary:hover{background:var(--ink);color:#fff}
+.hero-cta .arrow{transition:transform .2s ease}
+.hero-cta a:hover .arrow{transform:translateX(3px)}
 </style>
 </head>
 <body>
@@ -1308,7 +1318,12 @@
   <div class="wrap">
     <div class="eyebrow"><span class="pip"></span> Lease &amp; Finance · Dalton Toyota National City</div>
     <h1>The Toyota <em>Crown,</em> an August lease deal in National City.</h1>
-    <p class="deck">Looking for a Toyota Crown lease deal this August? Dalton Toyota National City stocks new Crown sedans to lease or finance at 2400 National City Blvd, right on the Mile of Cars. Toyota's lease and finance programs reset every month and shift by trim, so the fastest way to see this August's live numbers - payment, term, money factor, and what's actually on the lot - is to check toyotadalton.com or call our sales desk.</p>
+    <p class="deck">Dalton Toyota National City stocks new Crown sedans to lease or finance at 2400 National City Blvd. Toyota&rsquo;s lease programs change monthly, so ask for this month&rsquo;s live numbers.</p>
+
+    <div class="hero-cta">
+      <a class="primary" href="https://www.toyotadalton.com/searchnew.aspx" target="_blank" rel="noopener">See this month&rsquo;s Crown offers <span class="arrow">&rarr;</span></a>
+      <a class="secondary" href="https://www.toyotadalton.com/contactus.aspx">Build my payment</a>
+    </div>
 
     <div class="hero-meta">
       <div class="item"><div class="lbl">Address</div><div class="val">2400 National City Blvd<small>National City, CA 91950</small></div></div>

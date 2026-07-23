@@ -1317,6 +1317,17 @@
 
   /* July parity: deck spans the wrap at July's computed metrics (17px/1.7, no cap) */
   .hero .deck { font-size: 17px; line-height: 1.7; max-width: none; margin: 0 0 20px; }
+
+  /* Breadcrumb bar (April design system, matching the July articles) */
+  .breadcrumb-bar{font-size:12px}
+  .breadcrumb-bar nav{max-width:var(--maxw);margin:0 auto;padding:12px 32px 28px}
+  .breadcrumb-bar ol{list-style:none;display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:0;padding:0}
+  .breadcrumb-bar li{display:inline-flex;align-items:center;gap:10px;letter-spacing:.04em}
+  .breadcrumb-bar li:not(:last-child)::after{content:"\203A";color:var(--muted);font-size:14px;line-height:1}
+  .breadcrumb-bar a{color:var(--ink-soft);text-decoration:none;text-underline-offset:3px}
+  .breadcrumb-bar a:hover{color:var(--red);text-decoration:underline}
+  .breadcrumb-bar [aria-current="page"]{color:var(--ink);font-weight:500}
+  @media (max-width:640px){.breadcrumb-bar nav{padding:8px 20px 18px}.breadcrumb-bar{font-size:11px}}
 </style>
 </head>
 <body>
@@ -1356,6 +1367,17 @@
     <figcaption class="visually-hidden">A Toyota Crown at Dalton Toyota National City, the premium hybrid sedan available to lease or finance on the Mile of Cars.</figcaption>
   </figure>
 </header>
+<!-- Breadcrumb bar (matching the July articles) -->
+<div class="breadcrumb-bar">
+ <nav aria-label="Breadcrumb">
+  <ol>
+   <li><a href="https://www.toyotadalton.com/">Home</a></li>
+   <li><a href="https://www.toyotadalton.com/searchnew.aspx">New Inventory</a></li>
+   <li><span aria-current="page">Toyota Crown Lease</span></li>
+  </ol>
+ </nav>
+</div>
+
 
 <!-- ARTICLE BODY -->
 <main class="wrap" id="main-content">
@@ -1467,6 +1489,13 @@
         <div class="section-num"><span>03</span><span>The case for a lease</span></div>
         <h2 class="section-h">Why lease a <em>Toyota Crown</em>.</h2>
         <p class="lede">A few honest reasons Crown shoppers in National City and the wider South Bay lean toward a lease rather than a purchase.</p>
+        <figure class="section-image" style="margin:32px 0 28px;position:relative;">
+          <div class="frame" style="aspect-ratio:auto;border:none;background:transparent;max-height:60vh;overflow:hidden;border-radius:12px;">
+            <img src="toyota-lineup.webp" width="2200" height="1070" alt="A lineup of Toyota vehicles parked together on a coastal road at sunrise." loading="lazy" decoding="async" style="width:100%;height:56vh;display:block;object-fit:cover;object-position:center 45%;">
+          </div>
+          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:left;max-width:70ch;">The wider Toyota lineup. If the Crown is not the right fit once you drive it, we will point you at the model that is.</figcaption>
+        </figure>
+
 
         <h3>Lower monthly cost, newer car</h3>
         <p>Because a lease only finances depreciation over the term, the payment typically lands below a comparable 60- or 72-month finance contract on the same Crown. That means a higher trim - say a Limited instead of an XLE - can fit a monthly budget that an outright purchase of the same car wouldn't.</p>
@@ -1490,6 +1519,13 @@
         <div class="section-num"><span>04</span><span>The process</span></div>
         <h2 class="section-h">How leasing a Crown works <em>at Dalton Toyota</em>.</h2>
         <p class="lede">We've been part of the National City Mile of Cars since 1996, and the dealership was named Chamber of Commerce Mile of Cars Dealership of the Year - recognition earned the slow way, deal by deal.</p>
+        <figure class="section-image" style="margin:32px 0 28px;display:flex;flex-direction:column;align-items:center;">
+          <div style="width:100%;max-width:340px;overflow:hidden;border-radius:12px;">
+            <img src="dalton-team.webp" width="540" height="960" alt="A member of the Dalton Toyota National City team standing in the showroom." loading="lazy" decoding="async" style="width:100%;height:auto;display:block;">
+          </div>
+          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:center;max-width:60ch;">Our team walks the lease terms through line by line before anything is signed. Photo: Dalton Toyota National City.</figcaption>
+        </figure>
+
         <p>We carry a 4.6-star Google rating across roughly 6,000+ reviews, a track record built on straightforward numbers and a service department customers actually come back to. Here's exactly how we put an August Crown deal together.</p>
 
         <h3>1. Check live inventory first</h3>
@@ -1814,6 +1850,13 @@
 <!-- Sources -->
 <section class="sources" id="sources">
   <div class="wrap">
+      <div class="author-credit" style="margin:12px 0 36px;padding-top:28px;border-top:1px solid var(--rule);max-width:680px">
+        <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:10px">Reviewed by</div>
+        <div style="font-family:var(--display);font-size:26px;font-weight:800;letter-spacing:-.01em;line-height:1.1;color:var(--ink)"><a href="https://www.toyotadalton.com/staff.aspx" style="color:inherit;text-decoration:none">Monica Salem</a></div>
+        <div style="font-size:15px;font-weight:600;color:var(--red-deep,#0a2a52);margin:4px 0 16px">Marketing Director, Dalton Auto Group</div>
+        <p style="font-size:16px;line-height:1.65;color:var(--ink-soft);margin:0 0 16px;max-width:60ch">Monica leads marketing for the Dalton Auto Group in National City, CA, with roughly 27 years in automotive marketing. She reviews Dalton Toyota vehicle, pricing, and dealership content for accuracy against the store's own site, Toyota's published information, and independent sources (EPA, NHTSA, IIHS) before it is published.</p>
+      </div>
+
     <div class="article-grid" style="padding-top:0;">
       <div></div>
       <div class="body">

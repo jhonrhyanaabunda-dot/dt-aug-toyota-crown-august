@@ -1328,6 +1328,11 @@
   .breadcrumb-bar a:hover{color:var(--red);text-decoration:underline}
   .breadcrumb-bar [aria-current="page"]{color:var(--ink);font-weight:500}
   @media (max-width:640px){.breadcrumb-bar nav{padding:8px 20px 18px}.breadcrumb-bar{font-size:11px}}
+
+  /* Center the spec-strip stat numbers without the .stats full-bleed margins */
+  .spec-strip.centered .item{align-items:center;text-align:center}
+  .spec-strip.centered .num{text-align:center}
+  .spec-strip.centered .lbl{justify-content:center;text-align:center}
 </style>
 </head>
 <body>
@@ -1437,15 +1442,6 @@
         <div class="section-num"><span>02</span><span>The vehicle</span></div>
         <h2 class="section-h">The 2026 Toyota Crown: <em>what you're leasing</em>.</h2>
         <p class="lede">The Crown is Toyota's flagship sedan - a raised, confident ride that sits taller than a traditional sedan without crossing over into SUV territory. Toyota positions it as the brand's premium four-door, and every Crown ships as a hybrid, so there's no gas-only base trim to talk you down to.</p>
-<figure class="dealer-clip">
-          <div class="frame">
-            <video controls playsinline preload="metadata" poster="clip-poster.jpg" aria-label="Walk-around of the Toyota Crown at Dalton Toyota National City">
-              <source src="dealer-clip.mp4" type="video/mp4">
-            </video>
-          </div>
-          <figcaption>A quick walk-around of the Toyota Crown, filmed at Dalton Toyota National City.</figcaption>
-        </figure>
-
         <div class="trims">
           <article class="trim flagship">
             <div class="engine-row"><span class="engine">XLE &amp; Limited</span><span class="badge">Hybrid AWD</span></div>
@@ -1473,7 +1469,7 @@
         <h3>Picking a trim is also picking a residual</h3>
         <p>You can confirm any trim's window-sticker fuel economy yourself at the EPA's <a href="https://www.fueleconomy.gov/" rel="noopener" target="_blank">fueleconomy.gov</a> before you ever walk in - we encourage it. A leased Crown means you're locked into that trim's residual, so picking XLE versus Platinum is as much a budget decision as a performance one. None of the standard equipment changes month to month - but the lease program covering it does.</p>
 
-        <div class="spec-strip">
+        <div class="spec-strip centered">
           <div class="item"><div class="num">41<small> mpg</small></div><div class="lbl">EPA-est. combined · XLE &amp; Limited hybrid AWD</div></div>
           <div class="item"><div class="num">30<small> mpg</small></div><div class="lbl">Combined · Platinum HYBRID MAX</div></div>
           <div class="item"><div class="num">12.3<small>"</small></div><div class="lbl">Touchscreen · Toyota Audio Multimedia standard</div></div>
@@ -1482,6 +1478,15 @@
 
         <h3>Why the hybrid matters for a South Bay commuter</h3>
         <p>For a daily South Bay commuter, the Crown's hybrid drivetrain isn't a brochure claim - it's the difference between filling up weekly and filling up every couple of weeks. There's no de-contented base engine to settle for: every Crown is a hybrid, so the EPA-rated efficiency applies to the whole lineup. Confirm the exact figure for your chosen trim at fueleconomy.gov.</p>
+      
+        <figure class="dealer-clip">
+          <div class="frame">
+            <video controls playsinline preload="metadata" poster="clip-poster.jpg" aria-label="Walk-around of the Toyota Crown at Dalton Toyota National City">
+              <source src="dealer-clip.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption>A quick walk-around of the Toyota Crown, filmed at Dalton Toyota National City.</figcaption>
+        </figure>
       </section>
 
       <!-- §03 Why lease a Toyota Crown -->
@@ -1519,12 +1524,6 @@
         <div class="section-num"><span>04</span><span>The process</span></div>
         <h2 class="section-h">How leasing a Crown works <em>at Dalton Toyota</em>.</h2>
         <p class="lede">We've been part of the National City Mile of Cars since 1996, and the dealership was named Chamber of Commerce Mile of Cars Dealership of the Year - recognition earned the slow way, deal by deal.</p>
-        <figure class="section-image" style="margin:32px 0 28px;display:flex;flex-direction:column;align-items:center;">
-          <div style="width:100%;max-width:340px;overflow:hidden;border-radius:12px;">
-            <img src="dalton-team.webp" width="540" height="960" alt="A member of the Dalton Toyota National City team standing in the showroom." loading="lazy" decoding="async" style="width:100%;height:auto;display:block;">
-          </div>
-          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:center;max-width:60ch;">Our team walks the lease terms through line by line before anything is signed. Photo: Dalton Toyota National City.</figcaption>
-        </figure>
 
         <p>We carry a 4.6-star Google rating across roughly 6,000+ reviews, a track record built on straightforward numbers and a service department customers come back to. Here is how we put an August Crown deal together.</p>
 

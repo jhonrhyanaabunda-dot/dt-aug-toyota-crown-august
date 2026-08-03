@@ -956,7 +956,7 @@
   }
   .trust-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0;
     margin-top: 48px;
     padding-top: 40px;
@@ -1340,8 +1340,8 @@
   .spec-strip.centered .lbl{justify-content:center;text-align:center}
 
   /* Center the dark trust-grid stats */
-  .trust-grid .item{align-items:center;text-align:center}
-  .trust-grid .item .lbl{text-align:center;justify-content:center}
+  .trust-grid .item{align-items:flex-start;text-align:left}
+  .trust-grid .item .lbl{text-align:left;justify-content:flex-start}
 
 /* Gutter rail cards (July design) */
 .rail-action{display:block;text-decoration:none;color:#fff;background:#a50d11;border-radius:var(--radius-md,14px);padding:20px;margin-bottom:16px;transition:background .15s ease}
@@ -1707,11 +1707,7 @@
 <div class="eyebrow">Dalton Toyota National City</div>
 <h2>A Toyota store on the <em>Mile of Cars</em>.</h2>
 <p class="band-deck">We've been part of National City, recognized as Chamber of Commerce Mile of Cars Dealership of the Year, a track record built on straightforward numbers, deal by deal. We stock new Toyota Crown sedans to lease or finance at 2400 National City Blvd.</p>
-<div class="trust-grid">
-<div class="item"><div class="num">4.6<small> ★</small></div><div class="lbl">Google rating across<br>6,258 reviews</div></div>
-<div class="item"><div class="num">Mile</div><div class="lbl">Of Cars Dealership<br>of the Year</div></div>
-<div class="item"><div class="num">3</div><div class="lbl">Crown trims<br>XLE, Limited, Platinum</div></div>
-</div>
+<div class="trust-grid"><div class="item"><div class="num">4.6<small> ★</small></div><div class="lbl">Google rating · ≈6,258 reviews</div></div><div class="item"><div class="num">~41<small> mpg</small></div><div class="lbl">Crown hybrid combined (EPA)</div></div><div class="item"><div class="num">3</div><div class="lbl">Crown trims · XLE, Limited, Platinum</div></div><div class="item"><div class="num">Awarded</div><div class="lbl">Mile of Cars Dealership of the Year · National City Chamber of Commerce</div></div></div>
 <div class="findlay-extras">
 <div>
 <h5>How we quote</h5>

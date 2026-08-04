@@ -1160,13 +1160,9 @@
     .spec-strip.stats { margin-left: -48px; margin-right: 0; }
     .trust-grid {
       grid-template-columns: repeat(2, 1fr);
-      gap: 0;
+      gap: 32px 40px;
     }
-    .trust-grid .item { padding: 24px 24px 24px 0 !important; border-right: 1px solid rgba(255,255,255,.12); border-bottom: 1px solid rgba(255,255,255,.12); }
-    .trust-grid .item:not(:first-child) { padding-left: 0 !important; }
-    .trust-grid .item:nth-child(2) { padding-left: 24px !important; border-right: none; }
-    .trust-grid .item:nth-child(3) { padding-left: 0 !important; border-bottom: none; }
-    .trust-grid .item:nth-child(4) { padding-left: 24px !important; border-right: none; border-bottom: none; }
+    .trust-grid .item { padding: 8px 0 0 !important; }
     .findlay-extras { gap: 36px; }
     .cross-table { overflow-x: auto; }
     .cross-table table { min-width: 720px; }
@@ -1189,11 +1185,8 @@
     .findlay-band { padding: 48px 0 40px; }
     .findlay-band h2 { font-size: 32px; }
     .findlay-band .band-deck { font-size: 17px; }
-    .trust-grid { grid-template-columns: 1fr 1fr; padding-top: 36px; margin-top: 44px; }
-    .trust-grid .item { padding: 20px 16px 20px 0 !important; }
-    .trust-grid .item:nth-child(2) { padding-left: 16px !important; }
-    .trust-grid .item:nth-child(3) { padding-left: 0 !important; padding-top: 24px !important; border-top: 1px solid rgba(255,255,255,.12); }
-    .trust-grid .item:nth-child(4) { padding-left: 16px !important; padding-top: 24px !important; border-top: 1px solid rgba(255,255,255,.12); }
+    .trust-grid { grid-template-columns: 1fr 1fr; gap: 28px 24px; padding-top: 36px; margin-top: 44px; }
+    .trust-grid .item { padding: 8px 0 0 !important; }
     .trust-grid .item .num { font-size: 40px; }
     .spec-strip { grid-template-columns: 1fr 1fr; }
     .spec-strip .item { border-right: none; border-bottom: 1px solid var(--rule); padding: 24px 16px; }
